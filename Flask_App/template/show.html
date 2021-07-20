@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+	<table class="table">
+	<TH>
+	<TD><b>Name</b></TD>
+	<TD><b>Company</b></TD>
+	<TD><b>Job Title</b></TD>
+	<TD><b>Phones</b></TD>
+	<TD><b>Email</b></TD>
+	<TD></TD>
+	</TH>
+	{% for cl in row %}
+	<TR>
+	<TD></TD>
+	<TD>{{cl.fName}} {{cl.mName}} {{cl.lName}}</TD>
+	<TD>{{cl.workCompany}}</TD>
+	<TD>{{cl.jobTitle}}</TD>
+	<TD><b>Mobile:</b>{{cl.mobile}}<br><b>Work:</b>{{cl.workPhone}}<br><b>Work:</b>{{cl.homePhone}}</TD>
+	<TD>{{cl.email}}</TD>
+	</TR>
+	{% endfor %}
+	</table>
+	<div>
+	<a href = '/'>Back to form</a>	
+	</div>
+</html>
+
+	

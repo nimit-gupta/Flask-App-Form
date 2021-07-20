@@ -1,0 +1,46 @@
+{% extends "layout_reg.html" %}
+
+{% block title %}
+    Contact List!
+{% endblock %}
+
+{% block body %}
+ 	<form action="{{ url_for('addcontact')}}" method="POST"> 
+		<div class="form-group"><h5><center>Phone Contact Details</center></h5></div>
+		
+		<div class="form-group">
+            <input class="form-control" type="text" name="FirstName" placeholder="First Name">
+        </div>
+		<div class="form-group">
+            <input class="form-control" type="text" name="MiddleName" placeholder="Middle Name">
+        </div>
+		<div class="form-group">
+            <input class="form-control" type="text" name="LastName" placeholder="Last Name">
+        </div>
+		<div class="form-group">
+            <input class="form-control" type="text" name="WorkCompany" placeholder="Work Company">
+        </div>
+		<div class="form-group">
+            <input class="form-control" type="text" name="WorkJobTitle" placeholder="Job Title">
+        </div>
+		<div class="form-group">
+            <input class="form-control" type="text" name="Mobile" placeholder="Mobile">
+        </div>
+		<div class="form-group">
+            <input class="form-control" type="text" name="HomePhone" placeholder="Home Phone">
+        </div>
+		<div class="form-group">
+            <input class="form-control" type="text" name="WorkPhone" placeholder="Work Phone">
+        </div>
+		<div class="form-group">
+            <input class="form-control" type="text" name="email" placeholder="Email">
+        </div>
+		<div class="form-group">
+			<center><button class="btn btn-primary">Submit</button></center>
+		</div>
+		</form>
+        <div style = "margin-left :35%">
+        <a href = '/showdetails'>Show Details</a>    
+        </div>
+	{% endblock %}
+    
